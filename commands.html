@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>Design Command Terms</title>
+    <style>
+        table {
+            color: #333; /* Lighten up font color */
+            font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+            height: 30px;
+        }
+
+        /* Make cells a bit taller */
+
+        th {
+            background: #F3F3F3; /* Light grey background */
+            font-weight: bold; /* Make sure they're bold */
+        }
+
+        td {
+            background: #FAFAFA; /* Lighter grey background */
+            text-align: center; /* Center our text */
+        }
+
+        .col-contain {
+            overflow: hidden;
+        }
+
+        .tooltip {
+            /*display: inline-block;*/
+            border-bottom: 1px dotted #02061d;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 95%;
+            font-size: small;
+            color: #02061d;
+            text-align: justify;
+            border-radius: 6px;
+            padding: 5px;
+
+            /* Position the tooltip */
+            position: absolute;
+            margin-top: 25px;
+            left: 5px;
+            z-index: 1;
+        }
+
+        .red {
+            background-color: #ffbcbc;
+        }
+
+        .yellow {
+            background-color: #ffffbc;
+        }
+
+        .blue {
+            background-color: #c1f8ff;
+        }
+
+        .green {
+            background-color: #e4ffa3;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        caption {
+            font-size: small;
+        }
+
+        .top-mar {
+            margin-top: 25px;
+        }
+        .footer{
+            width: 100%;
+            text-align: center;
+            font-size: small;
+            position: fixed;
+            left: 0px;
+            margin-top: 25px;
+            color: rgba(2, 6, 29, 0.77);
+            padding: 5px;
+            background-color: rgba(205, 205, 205, 0.77);
+        }
+    </style>
+</head>
+<body>
+<div class="col-contain">
+    <table>
+        <caption><strong>Table</strong> <a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_8_techn_guu_1409_1_e&part=5&chapter=3">Design guide (p. 55)</a></caption>
+        <tr>
+            <th colspan="3">Design command terms</th>
+        </tr>
+        <tr>
+            <td class="tooltip">Analyse<span class="tooltiptext red">Break down in order to bring out the essential
+                elements or structure. (To identify parts and relationships, and to interpret information to reach
+                conclusions.)</span></td>
+            <td class="tooltip">Construct<span class="tooltiptext red">Display information in a diagrammatic or
+                logical form.</span></td>
+            <td class="tooltip">Create<span class="tooltiptext red">To evolve from one’s own thought or imagination,
+                as a work or an invention.</span></td>
+        </tr>
+        <tr>
+            <td class="tooltip">Define<span class="tooltiptext yellow">Give the precise meaning of a word, phrase,
+                concept or physical quantity.</span></td>
+            <td class="tooltip">Demonstrate<span class="tooltiptext yellow">Make clear by reasoning or evidence,
+                illustrating with examples or practical application.</span></td>
+            <td class="tooltip">Describe<span class="tooltiptext yellow">Give a detailed account or picture of a
+                situation, event, pattern or process.</span></td>
+        </tr>
+        <tr>
+            <td class="tooltip">Design<span class="tooltiptext green">Produce a plan, simulation or model.</span></td>
+            <td class="tooltip">Develop<span class="tooltiptext green">To improve incrementally, elaborate or expand
+                in detail. Evolve to a more advanced or effective state.</span></td>
+            <td class="tooltip">Evaluate<span class="tooltiptext green">Make an appraisal by weighing up the
+                strengths and limitations.</span></td>
+        </tr>
+        <tr>
+            <td class="tooltip">Explain<span class="tooltiptext blue">Give a detailed account including reasons or
+                causes. (See also “Justify”.)</span></td>
+            <td class="tooltip">Identify<span class="tooltiptext blue">Provide an answer from a number of possibilities.
+                Recognize and state briefly a distinguishing fact or feature.</span></td>
+            <td class="tooltip">Justify<span class="tooltiptext blue">Give valid reasons or evidence to support an
+                answer or conclusion. (See also “Explain”.)</span></td>
+        </tr>
+        <tr>
+            <td class="tooltip">List<span class="tooltiptext red">Give a sequence of brief answers with no explanation.</span></td>
+            <td class="tooltip">Outline<span class="tooltiptext red">Give a brief account or summary.</span></td>
+            <td class="tooltip">Present<span class="tooltiptext red">Offer for display, observation, examination
+                or consideration.</span></td>
+        </tr>
+        <tr>
+            <td class="tooltip">Prioritize<span class="tooltiptext green">Give relative importance to, or put in an order
+                of preference.</span></td>
+            <td class="tooltip">State<span class="tooltiptext green">Give a specific name, value or other
+                brief answer without explanation or calculation.</span></td>
+            <td class="tooltip">Summarize<span class="tooltiptext green">Abstract a general theme or major point(s).</span></td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
+        rubenpinzon@woodstock.ac.in</a>.</p>
+</footer>
+</body>
+</html>
+

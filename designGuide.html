@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>Design Guide</title>
+    <style>
+        table {
+            color: #333; /* Lighten up font color */
+            font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+            height: 30px;
+        }
+
+        /* Make cells a bit taller */
+
+        th {
+            background: #F3F3F3; /* Light grey background */
+            font-weight: bold; /* Make sure they're bold */
+        }
+
+        td {
+            background: #FAFAFA; /* Lighter grey background */
+            text-align: center; /* Center our text */
+        }
+
+        .col-contain {
+            overflow: hidden;
+        }
+
+        .tooltip {
+            /*display: inline-block;*/
+            border-bottom: 1px dotted #02061d;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 95%;
+            font-size: small;
+            color: #02061d;
+            text-align: justify;
+            border-radius: 6px;
+            padding: 5px;
+
+            /* Position the tooltip */
+            position: absolute;
+            margin-top: 25px;
+            left: 5px;
+            z-index: 1;
+        }
+
+        .red {
+            background-color: #ffbcbc;
+        }
+
+        .yellow {
+            background-color: #ffffbc;
+        }
+
+        .blue {
+            background-color: #c1f8ff;
+        }
+
+        .green {
+            background-color: #e4ffa3;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+        caption {
+            font-size: small;
+        }
+
+        .top-mar {
+            margin-top: 25px;
+        }
+        .footer{
+            width: 100%;
+            text-align: center;
+            font-size: small;
+            position: fixed;
+            left: 0px;
+            margin-top: 25px;
+            color: rgba(2, 6, 29, 0.77);
+            padding: 5px;
+            background-color: rgba(205, 205, 205, 0.77);
+        }
+    </style>
+</head>
+<body>
+<div class="col-contain">
+    <div>
+        <table>
+            <caption><strong>Table 2.</strong><a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_8_techn_guu_1409_1_e&part=3&chapter=3">MYP Design guide (p. 21)</a></caption>
+            <tr>
+                <th>Key concepts in design</th>
+            </tr>
+            <tr>
+                <td class="tooltip">Communication <span class="tooltiptext red"><strong>Communication</strong> is the exchange or transfer of signals, facts, ideas
+                        and symbols. It requires a sender, a message and an intended receiver. Communication involves the activity of conveying information
+                        or meaning. Effective communication requires a common “language” (which may be written, spoken or non-verbal).
+                        </span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Communities <span class="tooltiptext yellow"><strong>Communities</strong> are groups that exist in proximity defined by space,
+                        time or relationship. Communities include, for example, groups of people sharing particular characteristics, beliefs or
+                        values as well as groups of interdependent organisms living together in a specific habitat.
+                        </span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Development <span class="tooltiptext green"><strong>Development</strong> is the act or process of growth, progress or evolution,
+                        sometimes through iterative improvements.
+                        </span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Systems <span class="tooltiptext blue"><strong>Systems</strong> are sets of interacting or interdependent components. Systems
+                        provide structure and order in human, natural and built environments. Systems can be static or dynamic, simple or complex.
+                        </span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="top-mar">
+        <table>
+            <caption><strong>Table 3.</strong><a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_8_techn_guu_1409_1_e&part=5&chapter=1"> MYP Design guide (p. 23)</a></caption>
+            <tr>
+                <th colspan="3">Related concepts in design</th>
+            </tr>
+            <tr>
+                <td class="tooltip">Adaptation<span class="tooltiptext green"><strong>Adaptation</strong> involves incorporating
+                            ideas found in one product into the development of a new product</span></td>
+                <td class="tooltip">Collaboration<span class="tooltiptext green"><strong>Collaboration</strong> involves two or
+                            more people sharing expertise and experience, working together to solve a problem and realize
+                            shared goals.</span></td>
+                <td class="tooltip">Ergonomics<span class="tooltiptext green"><strong>Ergonomics</strong> is the application of
+                            scientific information and understanding of how humans relate to products, systems,
+                            interfaces and environments.</span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Evaluation<span class="tooltiptext yellow">In design, <strong>evaluation</strong> involves the gathering and processing of data to determine
+                            an action. Evaluation involves feedback, which can be used to control, revise or
+                            modify.</span></td>
+                <td class="tooltip">Form<span class="tooltiptext yellow"><strong>Form</strong> concerns the overall shape and configuration of a
+                product. It relates to spects such as aesthetics, shape, colour and texture.</span></td>
+                <td class="tooltip">Function<span class="tooltiptext yellow">The <strong>function</strong> of a solution refers to what it has been
+                designed to do and how effective it is at enabling that action to be performed.</span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Innovation<span class="tooltiptext blue"><strong>Innovation</strong> is the successful diffusion of an invention
+                into the marketplace.</span>
+                </td>
+                <td class="tooltip">Invention<span class="tooltiptext blue">An <strong>invention</strong> is an entirely novel product or a feature
+                of a product that is unique.</span>
+                </td>
+                <td class="tooltip">Markets and trends<span class="tooltiptext blue"><strong>Markets</strong> can be considered as sectors and
+                segments comprised of groups of individuals with similar needs. <strong>Trends</strong> involve short- and long-term patterns of
+                consumer behaviour.</span></td>
+            </tr>
+            <tr>
+                <td class="tooltip">Perspective<span class="tooltiptext red"><strong>Perspective</strong> relates to the point of view of various
+                stakeholders involved in solving a problem. Stakeholders can have different perspectives and can include clients,target audiences,
+                focus groups, consumers, manufacturers and experts.</span></td>
+                <td class="tooltip">Resources<span class="tooltiptext red"><strong>Resources</strong> relate to the supply of a commodity. In MYP
+                design, these commodities can be classified as information, materials and equipment.</span></td>
+                <td class="tooltip">Sustainability<span class="tooltiptext red"><strong>Sustainability</strong> is the capacity to endure, which
+                can have environmental, economic and social dimensions. In MYP design, sustainability can be considered in the following ways.
+                </span></td>
+            </tr>
+        </table>
+
+    </div>
+</div>
+<footer>
+    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
+        rubenpinzon@woodstock.ac.in</a>.</p>
+</footer>
+</body>
+</html>
+
+

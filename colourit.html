@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base target="_top">
+    <link rel="stylesheet" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+    <style>
+        .branding-below {
+            bottom: 56px;
+            top: 0;
+        }
+
+        .col-contain {
+            overflow: hidden;
+        }
+        .col-one {
+            float: left;
+            width: 50%;
+        }
+
+        .block {
+            padding-top: 20px;
+        }
+        .key-label{
+            color: red;
+        }
+        .related-label{
+            color: blue;
+        }
+        .isa_success, .isa_error {
+            margin: 10px 0px;
+            padding:12px;
+
+        }
+        .isa_error {
+            color: #D8000C;
+            background-color: #FFD2D2;
+        }
+        .isa_success {
+            color: #4F8A10;
+            background-color: #DFF2BF;
+        }
+        .footer {
+            width: 100%;
+            text-align: center;
+            font-size: small;
+            position: fixed;
+            left: 0px;
+            margin-top: 25px;
+            color: rgba(2, 6, 29, 0.77);
+            padding: 5px;
+            background-color: rgba(205, 205, 205, 0.77);
+        }
+
+    </style>
+</head>
+<body>
+<div class="sidebar branding-below">
+    <p>This Add-on finds all occurrences of the <b class="key-label">Key</b> and <b class="related-label">Related</b>
+        concepts inside the Unit planner and format them with <strong>Bold face</strong> and default colours.
+        Red and blue are used by default for key and related concepts, respectively.</p>
+    <p> <strong>How to use:</strong> Enter the concepts separated by comma and press Colour IB! Ex: system, function.
+        Additionally, Change the colour using the color picker.</p>
+    <form>
+        <div class="block col-contain">
+            <div class="col-one">
+                <b class='key-label'>Key Concept(s)</b>
+                <div>
+                    <input type="text" name="key" value="">
+                </div>
+                <div class="color">
+                    Colour (default): <input type="color" name="key-color"  value="#ff0000">
+                </div>
+                <b class='related-label'>Related Concept(s)</b>
+                <div>
+                    <input type="text" name="related" value="">
+                </div>
+                <div class="color">
+                    Colour (default): <input type="color" name="related-color" value="#0000ff">
+                </div>
+                <div class="block" id="button-bar">
+                    <button class="blue" id="run-colouring">Colour IB!</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
+            rubenpinzon@woodstock.ac.in</a>.</p>
+    </footer>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+    $(function() {
+        $('#run-colouring').click(runColouring);
+    });
+
+    function runColouring()
+    {
+        this.disabled = true;
+        $('#error').remove();
+        $('#success').remove();
+        var key = $('input[name=key]').val().split(",");
+        var key_color= $('input[name=key-color]').val();
+        var related_color= $('input[name=related-color]').val();
+        var related = $('input[name=related]').val().split(",");
+        for (var i = 0; i< key.length; i++){
+            var term = key[i].trim();
+            google.script.run
+                .withSuccessHandler(
+                    function(returnSuccess, element) {
+                        element.disabled = false;
+                    })
+                .withFailureHandler(
+                    function(msg, element) {
+                        showError(msg, $('#button-bar'));
+                        element.disabled = false;
+                    })
+                .withUserObject(this)
+                .ColourIt(term, key_color);
+        }
+        for (var i = 0; i< related.length; i++){
+            var term = related[i].trim();
+            google.script.run
+                .withSuccessHandler(
+                    function(returnSuccess, element) {
+                        showSuccess("Completed", $('#button-bar'));
+                        element.disabled = false;
+                    })
+                .withFailureHandler(
+                    function(msg, element) {
+                        showError(msg, $('#button-bar'));
+                        element.disabled = false;
+                    })
+                .withUserObject(this)
+                .ColourIt(term, related_color);
+        }
+
+    }
+
+    function showSuccess(msg, element) {
+        var div = $('<div id="success" class="isa_success">' + msg + '</div>');
+        $(element).after(div);
+    }
+    function showError(msg, element) {
+        var div = $('<div id="error" class="isa_error">' + msg + '</div>');
+        $(element).after(div);
+    }
+</script>
+</body>
+</html>
+
+
