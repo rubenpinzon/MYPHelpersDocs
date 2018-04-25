@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <title>Global Contexts and possible explorations</title>
+    <style>
+        table {
+            color: #333; /* Lighten up font color */
+            font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+            width: 100%;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        td, th {
+            border: 1px solid #CCC;
+            height: 30px;
+        }
+
+        /* Make cells a bit taller */
+
+        th {
+            background: #F3F3F3; /* Light grey background */
+            font-weight: bold; /* Make sure they're bold */
+        }
+
+        td {
+            background: #FAFAFA; /* Lighter grey background */
+            text-align: justify; /* Center our text */
+            padding-left: 5px;
+            font-size: small;
+        }
+
+        tr.header {
+            cursor: pointer;
+        }
+
+        li {
+            font-size: small;
+        }
+
+        .col-contain {
+            overflow: hidden;
+        }
+
+        caption {
+            font-size: small;
+            padding: 5px;
+        }
+
+        .footer {
+            width: 100%;
+            text-align: center;
+            font-size: small;
+            position: fixed;
+            left: 0px;
+            margin-top: 25px;
+            color: rgba(2, 6, 29, 0.77);
+            padding: 5px;
+            background-color: rgba(205, 205, 205, 0.77);
+        }
+        .red{
+            background-color: #ffbcbc;
+        }
+        .blue{
+            background-color: #c1f8ff;
+        }
+        .yellow{
+            background-color: #ffffbc;
+        }
+        .green{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+<div class="col-contain">
+    <table>
+        <caption><strong>Table 1.</strong> Global contexts and possible explorations. Click on any context to show the
+            possible explorations
+        </caption>
+        <tr class="header">
+            <th colspan="3">Identities and relationships</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">Who am I? Who are we? Students will explore identity; beliefs and values; personal,
+                physical, mental, social and spiritual health; human relationships including families, friends,
+                communities and cultures; what it means to be human.
+            </td>
+        </tr>
+        <tr>
+            <td>Competition and cooperation</td>
+            <td>Teams</td>
+            <td>Affiliation and leadership</td>
+        </tr>
+        <tr>
+            <td>Identity formation</td>
+            <td>Self-esteem</td>
+            <td>Roles and role models</td>
+        </tr>
+        <tr>
+            <td>Personal efficacy and agency</td>
+            <td>Attitudes</td>
+            <td>Motivation</td>
+        </tr>
+        <tr>
+            <td>Independence</td>
+            <td>Happiness and the good life</td>
+            <td>Physical, Psychological and social development</td>
+        </tr>
+        <tr>
+            <td>Transitions</td>
+            <td>Health and well-being</td>
+            <td>Lifestyle choices</td>
+        </tr>
+        <tr>
+            <td>Human nature and human dignity</td>
+            <td>Moral reasoning and ethical judgment</td>
+            <td>Consciousness and mind</td>
+        </tr>
+        <tr class="header">
+            <th colspan="3">Orientation in space and time</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">What is the meaning of “where” and “when”? Students will explore personal histories; homes
+                and journeys; turning points in humankind; discoveries; explorations and migrations of humankind;the
+                relationships between, and the interconnectedness of, individuals and civilizations, from personal,
+                local and global perspectives
+            </td>
+        </tr>
+        <tr>
+            <td>Civilizations and social histories</td>
+            <td>Heritage</td>
+            <td>Pilgrimage</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td>Migration</td>
+            <td>Displacement and exchange</td>
+            <td>Epochs</td>
+        </tr>
+        <tr>
+            <td>Eras</td>
+            <td>Turning points and “big history”</td>
+            <td>Scale</td>
+        </tr>
+        <tr>
+            <td>Duration</td>
+            <td>Frequency and variability</td>
+            <td>Peoples</td>
+        </tr>
+        <tr>
+            <td>Boundaries</td>
+            <td>Exchange and interaction</td>
+            <td>Natural and human landscapes and resources</td>
+        </tr>
+        <tr>
+            <td>Evolution</td>
+            <td>Constraints and adaptation</td>
+            <td></td>
+        </tr>
+        <tr class="header">
+            <th colspan="3">Personal and cultural expression</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">What is the nature and purpose of creative expression? Students will explore the ways in
+                which we discover and express ideas, feelings, nature, culture, beliefs and values; the ways in which we
+                reflect on, extend and enjoy our creativity; our appreciation of the aesthetic.
+            </td>
+        </tr>
+        <tr>
+            <td>Artistry</td>
+            <td>Craft</td>
+            <td>Creation</td>
+        </tr>
+        <tr>
+            <td>Beauty</td>
+            <td>Products</td>
+            <td>Systems and institutions</td>
+        </tr>
+        <tr>
+            <td>Social constructions of reality</td>
+            <td>Philosophies and ways of</td>
+            <td>Belief systems</td>
+        </tr>
+        <tr>
+            <td>Ritual and play</td>
+            <td>Critical literacy</td>
+            <td>Languages and linguistic systems</td>
+        </tr>
+        <tr>
+            <td>Histories of ideas</td>
+            <td>Fields and discipline</td>
+            <td>Analysis and argument</td>
+        </tr>
+        <tr>
+            <td>Metacognition and abstract thinking</td>
+            <td>Entrepreneurship</td>
+            <td>Practice and competency</td>
+        </tr>
+        <tr class="header">
+            <th colspan="3" >Scientific and technical innovation</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">How do we understand the world in which we live? Students will explore the natural world and
+                its laws; the interaction between people and the natural world; how humans use their understanding of
+                scientific principles; the impact of scientific and technological advances on communities and
+                environments;
+                the impact of environments on human activity; how humans adapt environments to their needs.
+            </td>
+        </tr>
+        <tr>
+            <td>Systems</td>
+            <td>Models</td>
+            <td>Methods</td>
+        </tr>
+        <tr>
+            <td>Products</td>
+            <td>Processes and solutions</td>
+            <td>Adaptation</td>
+        </tr>
+        <tr>
+            <td>Ingenuity and progress</td>
+            <td>Opportunity</td>
+            <td>Risk</td>
+        </tr>
+        <tr>
+            <td>Consequences and responsibility</td>
+            <td>Modernization</td>
+            <td>Industrialization and engineering</td>
+        </tr>
+        <tr>
+            <td>Digital life</td>
+            <td>Virtual environments and the Information Age</td>
+            <td>The biological revolution</td>
+        </tr>
+        <tr>
+            <td>Mathematical puzzles</td>
+            <td>Principles and discoveries</td>
+            <td></td>
+        </tr>
+        <tr class="header">
+            <th colspan="3">Globalization and sustainability</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">How is everything connected? Students will explore the interconnectedness of human-made
+                systems and communities; the relationship between local and global processes; how local experiences
+                mediate
+                the global; the opportunities and tensions provided by world- interconnectedness; the impact of
+                decision-making on humankind and the environment
+            </td>
+        </tr>
+        <tr>
+            <td>Markets</td>
+            <td>Commodities and commercialization</td>
+            <td>Human impact on the environment</td>
+        </tr>
+        <tr>
+            <td>Commonality</td>
+            <td>Diversity and interconnection</td>
+            <td>Consumption</td>
+        </tr>
+        <tr>
+            <td>Conservation</td>
+            <td>Natural resources and public goods</td>
+            <td>Population and demography</td>
+        </tr>
+        <tr>
+            <td>Urban planning</td>
+            <td>Strategy and infrastructure</td>
+            <td></td>
+        </tr>
+        <tr class="header">
+            <th colspan="3">Fairness and development</th>
+        </tr>
+        <tr>
+            <td colspan="3" class="green">What are the consequences of our common humanity? Students will explore rights and
+                responsibilities; the relationship between communities; sharing finite resources with other people and
+                with other living things; access to equal opportunities; peace and conflict resolution.
+            </td>
+        </tr>
+        <tr>
+            <td>Democracy</td>
+            <td>Politics</td>
+            <td>Government and civil society</td>
+        </tr>
+        <tr>
+            <td>Inequality</td>
+            <td>Difference and inclusion</td>
+            <td>Human capability and development</td>
+        </tr>
+        <tr>
+            <td>Social entrepreneurs</td>
+            <td>Rights</td>
+            <td>Law</td>
+        </tr>
+        <tr>
+            <td>Civic responsibility and the public sphere</td>
+            <td>Justice</td>
+            <td>Peace and conflict management</td>
+        </tr>
+        <tr>
+            <td>Power and privilege</td>
+            <td>Authority</td>
+            <td>Security and freedom</td>
+        </tr>
+        <tr>
+            <td>Imagining a hopeful future</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<footer>
+    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
+        rubenpinzon@woodstock.ac.in</a>.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1//jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.header').nextUntil('tr.header').hide();
+    });
+    $('.header').click(function () {
+        $(this).nextUntil('tr.header').slideToggle(100);
+    });
+</script>
+</body>
+</html>
