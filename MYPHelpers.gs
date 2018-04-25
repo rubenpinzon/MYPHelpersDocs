@@ -5,6 +5,7 @@ function onOpen(e) {
       .addItem('Design Command Terms', 'showCommandsbar')
       .addItem('Design Assessment Criteria', 'showCriteriabar')
       .addItem('Design Department ATLs', 'showATLbar')
+      .addItem('Global Contexts', 'showContextbar')
 
       .addToUi();
 }
@@ -48,25 +49,29 @@ function showATLbar() {
   DocumentApp.getUi().showSidebar(ui);
 }
 
-
+function showContextbar() {
+  var ui = HtmlService.createHtmlOutputFromFile('globalContext')
+      .setTitle('Global Contexts and explorations');
+  DocumentApp.getUi().showSidebar(ui);
+}
 function ColourIt(findMe, col) {
     var body = DocumentApp.getActiveDocument().getBody();
     var foundElement = body.findText(findMe);
-    while (foundElement != null) {
+    while (foundElement != null) {          
       // Get the text object from the element
       var foundText = foundElement.getElement().asText();
-
+      
       // Where in the Element is the found text?
       var start = foundElement.getStartOffset();
       var end = foundElement.getEndOffsetInclusive();
-
+      
       // Change the background color to red
       foundText.setForegroundColor(start, end, col);
       foundText.setBold(start, end, true);
-
+      
       // Find the next match
       foundElement = body.findText(findMe, foundElement);
-
+      
     }
-
+    
 }
