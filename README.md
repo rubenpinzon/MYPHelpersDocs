@@ -8,7 +8,7 @@ Google Docs Add-on that assist the creation of MYP Design Unit planners. Once in
 6. **Global Context:** Global contexts and possible explorations.
 
 ## Installing
-The installation of this Add-on can be done thought the Google App Marketplace (in process) and manually trough the script editor (advance).
+The installation of this Add-on can be done thought the Google App Marketplace (in process) and manually trough the script editor (advanced).
 
 ## Feedback
 Feel fee to write with any question/suggestion to rdpinzonm at ieee.org.
