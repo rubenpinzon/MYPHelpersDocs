@@ -1,10 +1,10 @@
 function onOpen(e) {
   DocumentApp.getUi().createAddonMenu()
       .addItem('Colour ib!', 'showColourItbar')
-      .addItem('Design Concetps', 'showDesignbar')
+      .addItem('Design Concepts', 'showConceptsbar')
       .addItem('Design Command Terms', 'showCommandsbar')
       .addItem('Design Assessment Criteria', 'showCriteriabar')
-      .addItem('Design Department ATLs', 'showATLbar')
+      .addItem('ATLs', 'showATLbar')
       .addItem('Global Contexts', 'showContextbar')
 
       .addToUi();
@@ -14,11 +14,6 @@ function onInstall(e) {
   onOpen(e);
 }
 
-/**
- * Opens a sidebar in the document containing the add-on's user interface.
- * This method is only used by the regular add-on, and is never called by
- * the mobile add-on version.
- */
 function showColourItbar() {
   var ui = HtmlService.createHtmlOutputFromFile('colourIt')
       .setTitle('Colour Key and Related concepts');
@@ -31,21 +26,21 @@ function showCommandsbar() {
   DocumentApp.getUi().showSidebar(ui);
 }
 
-function showDesignbar() {
-  var ui = HtmlService.createHtmlOutputFromFile('designGuide')
-      .setTitle('MYP Design Guide');
+function showConceptsbar() {
+  var ui = HtmlService.createHtmlOutputFromFile('concepts')
+      .setTitle('MYP Concepts');
   DocumentApp.getUi().showSidebar(ui);
 }
 
 function showCriteriabar() {
-  var ui = HtmlService.createHtmlOutputFromFile('designCriteria')
+  var ui = HtmlService.createHtmlOutputFromFile('criteria')
       .setTitle('MYP Design assessment criteria');
   DocumentApp.getUi().showSidebar(ui);
 }
 
 function showATLbar() {
-  var ui = HtmlService.createHtmlOutputFromFile('designATL')
-      .setTitle('MYP Design department ATLs');
+  var ui = HtmlService.createHtmlOutputFromFile('ATLs')
+      .setTitle('MYP ATLs');
   DocumentApp.getUi().showSidebar(ui);
 }
 
