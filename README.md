@@ -1,12 +1,15 @@
 # MYP Helpers Documentation
 Google Docs Add-ons that assist the creation of MYP Unit planners. Once installed it provides the following function and information from the Subject Guides:
-**Tools**
+
+### Tools
 1. **Colour ib!:** Search and format all the occurrences of the key and related concepts.
-**Subject Specific**
+
+### Subject Specific
 2. **Concepts:** List the Key and Related concepts.
 3. **Command Terms:** List the command terms.
 4. **Assessment Criteria:** List the criteria and strandse.
-**General**
+
+### General
 5. **ATLs:** List a subset of ATLs specific for Design. This file has been customized for my current school. Not recommended as it does not include the whole list of ATL.
 6. **Global Context:** Global contexts and possible explorations.
 
