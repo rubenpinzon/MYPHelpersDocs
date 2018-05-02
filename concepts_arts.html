@@ -87,25 +87,34 @@
         }
 
         .footer {
-            width: 100%;
             text-align: center;
             font-size: small;
-            position: fixed;
-            left: 0px;
+            left: 0;
             margin-top: 25px;
+            margin-left: -8px;
+            margin-right:  -8px;
             color: rgba(2, 6, 29, 0.77);
             padding: 5px;
             background-color: rgba(205, 205, 205, 0.77);
         }
+        .extra{
+            padding-top: 10px;
+            font-size: small;
+        }
+        .small-font{
+            font-size: small;
+        }
     </style>
 </head>
 <body>
+<h2>Arts Concepts</h2>
+<p>Taken from the <a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_6_artsm_guu_1409_2_e&part=3&chapter=3">
+    Arts Guide</a>. <strong>Hover</strong> over any concept to see the definition.</p>
 <div class="col-contain">
     <div>
         <table>
-            <caption><strong>Table 2.</strong><a href="">MYP Arts guide</a></caption>
             <tr>
-                <th>Key concepts in Arts</th>
+                <th>Key concepts</th>
             </tr>
             <tr>
                 <td class="tooltip">Aesthetics<span class="tooltiptext yellow"><strong>Aesthetics </strong>deals with the
@@ -145,20 +154,19 @@
                     </p></span></td>
             </tr>
         </table>
-        <p>Other key concepts can also be important in arts. <strong>Creativity</strong>, <strong>culture</strong>,
+        <p class="extra">Other key concepts can also be important in arts. <strong>Creativity</strong>, <strong>culture</strong>,
             <strong>form</strong>, <strong>perspective</strong>, <strong>relationships</strong>,
             as well as <strong>time, place and space</strong>, are all key concepts easily applied in arts units of study.</p>
     </div>
 
     <div class="top-mar">
         <table>
-            <caption><strong>Table 3.</strong><a href=""> MYP Arts guide</a></caption>
             <tr>
-                <th colspan="3">Related concepts in Arts</th>
+                <th colspan="3">Related concepts</th>
             </tr>
 
             <!--Generated programmatically with Python -->
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Audience<span class="tooltiptext green">An individual or group who receive and/or respond to arts. Addressing this concept includes examining strategies for engaging audience, different types of audiences and how the audience–artist relationship affects and influences the arts.</span>
                 </td>
                 <td class="tooltip">Boundaries <span class="tooltiptext green">The parameters that define a personality, a culture, an environment, civil law, a skill set or a belief structure. The concept of boundaries can include: themes, issues and concepts; the imagined or physical boundary between performance space and audience; the subversive or provocative nature of the arts; the dividing line between what is real and what is fictional; private and public space; the relationships between characters.</span>
@@ -166,7 +174,7 @@
                 <td class="tooltip">Composition<span class="tooltiptext green">The intentional organization or contrast, balance, arrangement or awareness of the elements and principles of art for a particular purpose in the creation of art. These may include tension and release, repetition and variety, unison and harmony, sound and silence, theme and variation, and dynamics and energy.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Expression <span class="tooltiptext blue">The representation of feelings and emotions, ideas, thoughts, beliefs, values and opinions in the process of visual or physical articulation. It can include signs, symbols, semiotics or any other imagery to capture the artist intention. It is something you do, create or play that shows what you think or feel. Expression facilitates the communication of an idea.</span>
                 </td>
                 <td class="tooltip">Genre<span class="tooltiptext blue">Different artistic expressions that create a style when grouped by the same use of techniques, in a distinctive manner regarding theme, content or practice.</span>
@@ -174,7 +182,7 @@
                 <td class="tooltip">Innovation<span class="tooltiptext blue">An altered interpretation or the experimentation of ideas, techniques and media. It ensures originality and creativity by new ways of presenting ideas and unusual use of media. The invention of new functions and ways of working.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Interpretation <span class="tooltiptext red">The understanding of experiences and events mainly through the reference frame of our own reality and contexts. The understanding of the meaning of an artist’s creative work and artistic expressions.</span>
                 </td>
                 <td class="tooltip">Narrative<span class="tooltiptext red">A spoken, written or visual account of connected events; a story, which may be fictional or non-fictional. The narrative may manipulate the viewpoint of the audience: bias is persuasive narrative designed to deliver a particular mandate, brief or point of view.</span>
@@ -182,7 +190,7 @@
                 <td class="tooltip">Play <span class="tooltiptext red">Play can occur in an artistic process or product. In process, play is experimentation—playing with ideas, characters, and techniques. This may be structured or free play. Improvisation is a structured approach to play, which often has the elements of a game and may involve particular rules. In product, play can be a collective creation of a theatre piece or a pre-existing piece of theatre that is authored and documented and that is transformed into live action.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Presentation<span class="tooltiptext red">The choice of medium, tool, and exhibition or performance space that contributes to audience understanding of the meaning or purpose of the art piece.</span>
                 </td>
                 <td class="tooltip">Representation<span class="tooltiptext red">The description, depiction or portrayal of a person, group, place or item in a particular way or as being of a certain nature. An image or likeness.</span>
@@ -190,7 +198,7 @@
                 <td class="tooltip">Role<span class="tooltiptext red">The development, adoption and portrayal of a character. The performer has to consider how to communicate the character’s psychology, emotions and physicality. This is concerned with examining situations, issues, concepts and texts from the perspective of a role. Different approaches, ideas and texts can be used to create and portray a character.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Structure<span class="tooltiptext green">This refers to the shape, timing and organization of the art and the factors that determine how a piece or performance is shaped. It takes into consideration form, function, narrative, melody, harmony, contrast, focus and the construction of smaller parts to create a whole.</span>
                 </td>
                 <td class="tooltip">Style<span class="tooltiptext green">A type of art characteristic of a group of people, person or period of time and belonging to a shared tradition or set of conventions. Art conforming to an established form.</span>
@@ -204,8 +212,8 @@
 </div>
 
 <footer>
-    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
-        rubenpinzon@woodstock.ac.in</a>.</p>
+    <p class="footer">Developed by: <a href="mailto:rdpinzonm@ieee.org">Ruben D. Pinzon </a>. Disclaimer: this
+        is a reference document not intended to replace the MYP Subject guide. Use with discretion.</p>
 </footer>
 </body>
 </html>

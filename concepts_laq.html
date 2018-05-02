@@ -8,9 +8,9 @@
         Body {
             font-family: Helvetica, Arial, sans-serif; /* Nicer font */
         }
+
         table {
             color: #333; /* Lighten up font color */
-            font-family: Helvetica, Arial, sans-serif; /* Nicer font */
             width: 100%;
             border-collapse: collapse;
             border-spacing: 0;
@@ -31,6 +31,7 @@
         td {
             background: #FAFAFA; /* Lighter grey background */
             text-align: center; /* Center our text */
+
         }
 
         .col-contain {
@@ -40,6 +41,9 @@
         .tooltip {
             /*display: inline-block;*/
             border-bottom: 1px dotted #02061d;
+        }
+        .small-font{
+            font-size: small;
         }
 
         .tooltip .tooltiptext {
@@ -78,36 +82,37 @@
             visibility: visible;
         }
 
-        caption {
-            font-size: small;
-        }
-
         .top-mar {
             margin-top: 25px;
         }
 
         .footer {
-            width: 100%;
             text-align: center;
             font-size: small;
-            position: fixed;
-            left: 0px;
+            left: 0;
             margin-top: 25px;
+            margin-left: -8px;
+            margin-right:  -8px;
             color: rgba(2, 6, 29, 0.77);
             padding: 5px;
             background-color: rgba(205, 205, 205, 0.77);
         }
+        .extra{
+            padding-top: 10px;
+            font-size: small;
+        }
     </style>
+
 </head>
 <body>
+<h2>Language Acquisition Concepts</h2>
+<p>Taken from the <a href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_2_langb_guu_1409_1_e&part=3&chapter=3">
+    Language Acquisition Guide</a>. <strong>Hover</strong> over any concept to see the definition.</p>
 <div class="col-contain">
     <div>
         <table>
-            <caption><strong>Table 2.</strong><a
-                    href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_2_langb_guu_1409_1_e&part=3&chapter=3">MYP
-                Language acquisition guide</a></caption>
             <tr>
-                <th>Key concepts in Language acquisition</th>
+                <th>Key concepts</th>
             </tr>
             <tr>
                 <td class="tooltip">Communication<span class="tooltiptext red"><strong>Communication</strong>
@@ -152,14 +157,12 @@
 
     <div class="top-mar">
         <table>
-            <caption><strong>Table 3.</strong><a
-                    href="https://ibpublishing.ibo.org/server2/rest/app/tsm.xql?doc=m_2_langb_guu_1409_1_e&part=5&chapter=1">
-                MYP Language acquisition guide</a></caption>
+
             <tr>
-                <th colspan="3">Related concepts in Language acquisition</th>
+                <th colspan="3">Related concepts</th>
             </tr>
             <!--Generated programmatically with Python -->
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Change<span
                         class="tooltiptext green">A variation in size, amount or behaviour.</span></td>
                 <td class="tooltip">Equivalence<span class="tooltiptext green">The state of being identically equal or interchangeable, applied to statements, quantities or expressions. </span>
@@ -167,7 +170,7 @@
                 <td class="tooltip">Generalization<span class="tooltiptext green">A general statement made on the basis of specific examples.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Justification<span class="tooltiptext blue">Valid reasons or evidence used to support a statement.</span>
                 </td>
                 <td class="tooltip">Measurement<span class="tooltiptext blue">A method of determining quantity, capacity or dimension using a defined unit.</span>
@@ -175,14 +178,14 @@
                 <td class="tooltip">Models<span class="tooltiptext blue">Depictions of real-life events using expressions, equations or graphs.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Patterns<span class="tooltiptext red">Sets of numbers or objects that follow a specific order or rule.</span>
                 </td>
                 <td class="tooltip">Quantity<span class="tooltiptext red">An amount or number.</span></td>
                 <td class="tooltip">Representation<span class="tooltiptext red">The manner in which something is presented.</span>
                 </td>
             </tr>
-            <tr>
+            <tr class="small-font">
                 <td class="tooltip">Simplification<span class="tooltiptext red">The process of reducing to a less complicated form.</span>
                 </td>
                 <td class="tooltip">Space<span class="tooltiptext red">The frame of geometrical dimensions describing an entity.</span>
@@ -195,8 +198,8 @@
 </div>
 
 <footer>
-    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
-        rubenpinzon@woodstock.ac.in</a>.</p>
+    <p class="footer">Developed by: <a href="mailto:rdpinzonm@ieee.org">Ruben D. Pinzon </a>. Disclaimer: this
+        is a reference document not intended to replace the MYP Subject guide. Use with discretion.</p>
 </footer>
 </body>
 </html>
