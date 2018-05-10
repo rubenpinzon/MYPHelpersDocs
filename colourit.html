@@ -84,9 +84,9 @@
         </div>
     </form>
     <footer>
-        <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
-            rubenpinzon@woodstock.ac.in</a>.</p>
-    </footer>
+    <p class="footer">Developed by: Ruben D. Pinzon M. <a href="mailto:rubenpinzon@woodstock.ac.in">
+        rubenpinzon@woodstock.ac.in</a>.</p>
+        </footer>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -104,6 +104,8 @@
         var key_color= $('input[name=key-color]').val();
         var related_color= $('input[name=related-color]').val();
         var related = $('input[name=related]').val().split(",");
+        key = key.filter(Boolean);
+        related = related.filter(Boolean);
         for (var i = 0; i< key.length; i++){
             var term = key[i].trim();
             google.script.run
@@ -118,7 +120,9 @@
                     })
                 .withUserObject(this)
                 .ColourIt(term, key_color);
-        }
+         }
+        
+        
         for (var i = 0; i< related.length; i++){
             var term = related[i].trim();
             google.script.run
@@ -133,7 +137,7 @@
                         element.disabled = false;
                     })
                 .withUserObject(this)
-                .ColourIt(term, related_color);
+                .ColourIt(term, related_color);        
         }
 
     }
